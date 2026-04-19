@@ -27,14 +27,37 @@
         .eyebrow { color: var(--cyan); font-size: 14px; font-weight: 800; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 20px; }
         
         .hero h1 { font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 900; line-height: 1.1; margin-bottom: 25px; color: white; }
-        .hero h1 .highlight { color: var(--yellow); }
+        .hero h1 .highlight {
+            background: linear-gradient(135deg, #00d9ff, #fbbf24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: 900;
+        }
         .hero-subtitle { font-size: 1.3rem; color: var(--text-dim); max-width: 600px; margin: 0 auto 40px; line-height: 1.6; }
         
         .video-placeholder { background: linear-gradient(135deg, rgba(34, 211, 238, 0.1), rgba(251, 191, 36, 0.1)); border: 2px dashed var(--border); border-radius: 16px; padding: 60px 40px; margin: 40px auto; max-width: 700px; text-align: center; }
         .video-placeholder p { color: var(--muted); font-size: 1.1rem; }
         
-        .cta-button { display: inline-block; background: var(--yellow); color: #111; padding: 20px 48px; font-size: 1.2rem; font-weight: 800; text-decoration: none; border-radius: 12px; transition: all 0.2s; margin: 10px; }
-        .cta-button:hover { transform: translateY(-3px); box-shadow: 0 10px 30px rgba(251, 191, 36, 0.35); }
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            color: white;
+            padding: 22px 52px;
+            font-size: 1.25rem;
+            font-weight: 800;
+            text-decoration: none;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            margin: 10px;
+            box-shadow: 0 0 20px rgba(0, 198, 255, 0.5), 0 4px 15px rgba(0, 114, 255, 0.3);
+            border: none;
+            cursor: pointer;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 0 30px rgba(0, 198, 255, 0.7), 0 6px 20px rgba(0, 114, 255, 0.4);
+        }
         .cta-outline { background: transparent; color: var(--text); border: 2px solid var(--border); }
         
         .micro-reassurance { margin-top: 25px; font-size: 0.95rem; color: var(--text-dim); }
@@ -93,15 +116,15 @@
     <div class="container">
         <p class="eyebrow">🚨 The Warning Most Business Owners Ignore</p>
         
-        <h1 style="margin-bottom: 15px;">
+        <h1 style="margin-bottom: 15px; max-width: 800px; margin-left: auto; margin-right: auto; line-height: 1.15;">
             <span style="font-size: clamp(2.8rem, 7vw, 5rem); display: block; margin-bottom: 15px; color: #fff; text-shadow: 0 0 40px rgba(255,255,255,0.1);">
-                You're Already Too Slow.
+                You're Already <span class="highlight">Too Slow.</span>
             </span>
             <span style="font-size: clamp(1.4rem, 3.5vw, 2rem); color: var(--cyan); display: block; margin-bottom: 15px; font-weight: 700;">
-                10 copy-paste automation templates that deploy in 5 minutes.
+                <span class="highlight">10 copy-paste</span> automation templates that deploy in <span class="highlight">5 minutes.</span>
             </span>
             <span style="font-size: clamp(1.1rem, 2.5vw, 1.5rem); color: var(--text-dim); display: block; font-weight: 500;">
-                So you can reclaim 10+ hours every week and finally focus on growth.
+                So you can reclaim <span class="highlight">10+ hours</span> every week and finally focus on growth.
             </span>
         </h1>
         
@@ -115,7 +138,7 @@
             <p style="font-size: 0.95rem; margin-top: 10px;">See exactly how these templates work in real businesses</p>
         </div>
         
-        <a href="#offer" class="cta-button" style="background: linear-gradient(135deg, #f97316, #ea580c); color: white; box-shadow: 0 4px 20px rgba(249, 115, 22, 0.4);">Get Instant Access — $97</a>
+        <a href="#offer" class="cta-button">Get Instant Access — $97</a>
         <p class="micro-reassurance">One-time payment • No subscription • 30-day guarantee</p>
     </div>
 </section>
