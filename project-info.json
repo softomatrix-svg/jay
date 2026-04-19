@@ -1,0 +1,21 @@
+{
+  "projectName": "jay",
+  "cleanedName": "jay",
+  "github": {
+    "owner": "softomatrix-svg",
+    "repo": "jay",
+    "fullName": "softomatrix-svg/jay",
+    "visibility": "public",
+    "isOrganization": false,
+    "isNew": true
+  },
+  "vercel": {
+    "projectId": "prj_aFbni7CpD6QUV7n0r8qHyC0VOYka",
+    "projectName": "jay",
+    "scope": "softomatrix-9324s-projects",
+    "scopeId": "team_P0dOPYPpolzDOIz4YGlrLTHx",
+    "isNew": true
+  },
+  "linkedAt": "2026-04-19",
+  "status": "ready"
+}
